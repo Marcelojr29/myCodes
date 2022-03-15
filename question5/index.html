@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="valor_a"></label>
+            <input type="text" name="valor_a" id="valor_a" placeholder="Digite o valor de A">
+        </div>
+        <div>
+            <label for="valor_b"></label>
+            <input type="text" name="valor_b" id="valor_b" placeholder="Digite o valor de B">
+        </div>
+        <div>
+            <label for="valor_c"></label>
+            <input type="text" name="valor_c" id="valor_c" placeholder="Digite o valor de C">
+        </div>
+        <div>
+            <button onclick="calcular_soma_maiores()">Enviar Cálculo</button>
+        </div>
+    </form>
+    <hr>
+    <div>
+        Resultado: <b><span id="resultado"></span></b> <br>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

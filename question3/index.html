@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="numero_1"></label>
+            <input type="text" name="numero_1" id="numero_1" placeholder="Digite o primeiro número">
+        </div>
+        <div>
+            <label for="numero_2"></label>
+            <input type="text" name="numero_2" id="numero_2" placeholder="Digite o segundo número">
+        </div>
+        <div>
+            <label for="numero_3"></label>
+            <input type="text" name="numero_3" id="numero_3" placeholder="Digite o terceiro número">
+        </div>
+        <div>
+            <button onclick="calcular_numeros()">Enviar Cálculo</button>
+        </div>
+    </form>
+    <hr>
+    <div>
+        Produto do dobro do primeiro com metade do segundo: <b><span id="primeiro-calculo"></span></b> <br>
+        Soma do triplo do primeiro com o terceiro: <b><span id="segundo-calculo"></span></b> <br>
+        Terceiro eleavado ao cubo: <b><span id="terceiro-calculo"></span></b> <br>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

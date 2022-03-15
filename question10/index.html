@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="peso-pessoa1"></label>
+            <input type="text" name="peso-pessoa1" id="peso-pessoa1" placeholder="Digite o peso da pessoa 1">
+        </div>
+        <div>
+            <label for="peso-pessoa2"></label>
+            <input type="text" name="peso-pessoa2" id="peso-pessoa2" placeholder="Digite o peso da pessoa 2">
+        </div>
+        <div>
+            <label for="altura-pessoa1"></label>
+            <input type="text" name="altura-pessoa1" id="altura-pessoa1" placeholder="Digite a altura da pessoa 1">
+        </div>
+        <div>
+            <label for="altura-pessoa2"></label>
+            <input type="text" name="altura-pessoa2" id="altura-pessoa2" placeholder="Digite a altura da pessoa 2">
+        </div>
+        <div>
+            <button onclick="calcular_peso_altura()">Realizar Operação</button>
+        </div>
+    </form>
+    <hr>
+    Pessoa mais pesada: <b><span id="pessoa_pesada"></span></b>
+    Pessoa mais alta: <b><span id="pessoa_alta"></span></b>
+    <script src="js/app.js"></script>
+</body>
+</html>

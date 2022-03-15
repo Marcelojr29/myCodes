@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="tempo_gasto_viagem"></label>
+            <input type="text" name="tempo_gasto_viagem" id="tempo_gasto_viagem" placeholder="Digite o tempo gasto na viagem">
+        </div>
+        <div>
+            <label for="velocidade-media"></label>
+            <input type="text" name="velocidade-media" id="velocidade-media" placeholder="Digite a velocidade média">
+        </div>
+        <div>
+            <button onclick="calcular_resultados()">Realizar Operação</button>
+        </div>
+    </form>
+    <hr>
+    Velocidade Média: <b><span id="velocidade-media"></span></b>
+    Tempo gasto na viagem: <b><span id="tempo-gasto"></span></b>
+    Distancia Percorrida: <b><span id="distancia-percorrida"></span></b>
+    Quantidade de Litros usados na viagem: <b><span id="litros-usados"></span></b>
+    <script src="js/app.js"></script>
+</body>
+</html>

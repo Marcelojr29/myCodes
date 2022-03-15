@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nome_cliente"></label>
+            <input type="text" name="nome_cliente" id="nome_cliente" placeholder="Digite o nome do cliente">
+        </div>
+        <hr>
+        <div>
+            <label for="quant_parafusos"></label>
+            <input type="text" name="quant_parafusos" id="quant_parafusos" placeholder="Digite a quantidade de parafusos">
+        </div>
+        <div>
+            <label for="quant_porcas"></label>
+            <input type="text" name="quant_porcas" id="quant_porcas" placeholder="Digite a quantidade de porcas">
+        </div>
+        <div>
+            <label for="quant_arruelas"></label>
+            <input type="text" name="quant_arruelas" id="quant_arruelas" placeholder="Digite a quantidade de arruelas">
+        </div>
+        <div>
+            <button onclick="calcular_total_compras()">Enviar Itens</button>
+        </div>
+    </form>
+    <hr>
+    <div>
+        Nome do cliente: <b><span id="nome_cliente_compra"></span></b> <br>
+        Quantidade de Porcas: <b><span id="quant_porcas_compra"></span></b> <br>
+        Quantidade de Arruelas: <b><span id="quant_arruelas_compra"></span></b> <br>
+        Quantidade de Parafusos: <b><span id="quant_parafusos_compra"></span></b> <br>
+        Total do desconto: <b><span id="total_desconto_compra"></span></b> <br>
+        Total da compra: <b><span id="total_compra_compra"></span></b> <br>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

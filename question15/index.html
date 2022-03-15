@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="quant_latas"></label>
+            <input type="text" name="quant_latas" id="quant_latas" placeholder="Digite a quantidade de latas">
+        </div>
+        <div>
+            <label for="quant_garrafas_600"></label>
+            <input type="text" name="quant_garrafas_600" id="quant_garrafas_600" placeholder="Digite a quantidade de latas de 600ml">
+        </div>
+        <div>
+            <label for="quant_garrafas_2l"></label>
+            <input type="text" name="quant_garrafas_2l" id="quant_garrafas_2l" placeholder="Digite a quantidade de latas de 2l">
+        </div>
+        <div>
+            <button onclick="calcular_resultados()">Realizar Operação</button>
+        </div>
+    </form>
+    <hr>
+    Litros de Refrigerante Comprados: <b><span id="total_refrig_litros"></span></b>
+    <script src="js/app.js"></script>
+</body>
+</html>

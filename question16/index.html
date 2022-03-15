@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="quant_moedas1cent"></label>
+            <input type="text" name="quant_moedas1cent" id="quant_moedas1cent" placeholder="Digite a quantidade de moedas de 1 cent">
+        </div>
+        <div>
+            <label for="quant_moedas5cent"></label>
+            <input type="text" name="quant_moedas5cent" id="quant_moedas5cent" placeholder="Digite a quantidade de moedas de 5 cent">
+        </div>
+        <div>
+            <label for="quant_moedas10cent"></label>
+            <input type="text" name="quant_moedas10cent" id="quant_moedas10cent" placeholder="Digite a quantidade de moedas de 10 cent">
+        </div>
+        <div>
+            <label for="quant_moedas25cent"></label>
+            <input type="text" name="quant_moedas25cent" id="quant_moedas25cent" placeholder="Digite a quantidade de moedas de 25 cent">
+        </div>
+        <div>
+            <label for="quant_moedas50cent"></label>
+            <input type="text" name="quant_moedas50cent" id="quant_moedas50cent" placeholder="Digite a quantidade de moedas de 50 cent">
+        </div>
+        <div>
+            <label for="quant_moedas1real"></label>
+            <input type="text" name="quant_moedas1real" id="quant_moedas1real" placeholder="Digite a quantidade de moedas de 1 real">
+        </div>
+        
+        <div>
+            <button onclick="calcular_resultados()">Realizar Operação</button>
+        </div>
+    </form>
+    <hr>
+    Total em reais economizados: <b>R$ <span id="total_refrig_litros"></span></b>
+    <script src="js/app.js"></script>
+</body>
+</html>

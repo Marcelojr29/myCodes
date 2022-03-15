@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="comprimento">Comprimento </label>
+            <input type="text" name="comprimento" id="comprimento" placeholder="Digite o comprimento do quadrado">
+        </div>
+        <div>
+            <label for="largura">Largura </label>
+            <input type="text" name="largura" id="largura" placeholder="Digite a largura do quadrado">
+        </div>
+        <div>
+            <button onclick="calcular_area()">Calcular Área do Quadrado</button>
+        </div>
+    </form>
+    <hr>
+    <div>
+        Área do quadrado: <b><span id="area_quadrado"></span></b> <br>
+        Dobro da área do quadrado: <b><span id="dobro_area_quadrado"></span></b>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
