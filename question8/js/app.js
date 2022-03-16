@@ -1,7 +1,13 @@
 const calcular_desconto = () => {
     // * Faça seu código aqui  
     event.preventDefault();
-    
+    let salario = Number(document.getElementById('salario_funcionario').value);
+    let desconto = salario*0.11;
+
+    if(salario*0.11 > 318.20){
+        desconto = 318.20;
+    }else{}
+    document.getElementById('desconto-total').innerHTML = desconto;
     
 }
 

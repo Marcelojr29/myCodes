@@ -1,25 +1,46 @@
 const calcular_peso_altura = () => {
     // * Faça seu código aqui
     event.preventDefault();
-  let nomePessoa = document.getElementById('nomePessoa').value;
-  let nomePessoa2 = document.getElementById('nomePessoa2').value;
-  let alturaPessoa = Number(document.getElementById('altura').value);
-  let pesoPessoa = Number(document.getElementById('peso').value);
-  
+    let nome1 = 'Marcelo';
+    let nome2 = 'Junior';
+    let peso1 = Number(document.getElementById('peso-pessoa1').value);
+    let peso2 = Number(document.getElementById('peso-pessoa2').value);
+    let altura1 = Number(document.getElementById('altura-pessoa1').value);
+    let altura2 = Number(document.getElementById('altura-pessoa2').value);
+    
+    let maiorPeso = Math.max(peso1, peso2);
+    let maiorAltura = Math.max(altura1, altura2);
 
-  let pessoa_pesada = Math.max(nomePessoa('peso'),nomePessoa2('peso'));
-  let pessoa_alta = Math.max(nomePessoa('altura'), nomePessoa2('altura'));
+    if(maiorPeso == peso1 > peso2){
+        document.getElementById('pessoa-pesada').innerHTML = `A pessoa mais pesada é ${nome1} com ${peso1}kg`;
+    } else if(maiorPeso == peso2 > peso1){
+        document.getElementById('pessoa-pesada').innerHTML = `A pessoa mais pesada é ${nome2} com ${peso2}kg`;
+    }
+    if(maiorAltura == altura1 > altura2){
+        document.getElementById('pessoa-alta').innerHTML = `A pessoa mais alta é ${nome1} com ${altura1}cm`;
+    } else if(maiorAltura == altura2 > altura1){
+        document.getElementById('pessoa-alta').innerHTML = `A pessoa mais alta é ${nome2} com ${altura2}cm`;
+    }
+    /**if(maiorPeso == peso1){
+        console.log(`A pessoa de maior peso é ${nome1} com ${peso1}KG`);
+    } else if(maiorPeso == peso2){
+        console.log(`A pessoa de maior peso é ${nome2}com ${peso2}KG`);
+    }
+    if(maiorAltura == altura1){
+        console.log(`A pessoa mais alta é ${nome1} com ${altura1}cm`);
+    } else if(maiorAltura == altura2){
+        console.log(`A pessoa mais alta é ${nome2} com ${altura2}cm`);
+    }*/
 
-  if(pessoa_pesada == nomePessoa(pesoPessoa)){
-      document.getElementById('pessoa_pesada').innerHTML = `A pessoa de maior peso é ${nomePessoa}`;
-  } else {
-      document.getElementById('pessoa_pesada').innerHTML = `A pessoa de maior peso é ${nomePessoa2}`;
+    document.getElementById('peso-pessoa1').innerHTML = peso1;
+    document.getElementById('peso-pessoa2').innerHTML = peso2;
+    document.getElementById('altura-pessoa1').innerHTML = altura1;
+    document.getElementById('altura-pessoa2').innerHTML = altura2;
+    document.getElementById('pessoa-pesada').innerHTML = `A pessoa mais pesada é: ${maiorPeso}`;
+    document.getElementById('pessoa-alta').innerHTML = `A pessoa mais alta é: ${maiorAltura}`;
   }
-  if(pessoa_alta == nomePessoa(alturaPessoa)){
-      document.getElementById('pessoa_alta').innerHTML = `A pessoa mais alta é ${nomePessoa}`;
-  } else {
-      document.getElementById('pessoa_alta').innerHTML = `A pessoa mais alta é ${nomePessoa2}`;
-  }
+  /**Crie um algoritmo que peça o nome, a altura e o peso de duas pessoas e apresente o nome e peso
+da mais pesada e o nome e altura da mais alta. */
 
 
 
@@ -29,7 +50,7 @@ const calcular_peso_altura = () => {
 
 
 
-}
+
 
 
 /**Crie um algoritmo que peça o nome, a altura e o peso de duas pessoas e apresente o nome e peso
